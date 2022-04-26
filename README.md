@@ -307,3 +307,13 @@ git commit --amend 将当前status中的修改与上一个commit进行合并，�
 $ git config --global http.sslVerify "false"
 
 $ git config --global --unset http.proxy```
+
+OpenSSL SSL_read: Connection was reset, errno 10054 错误解决:
+
+https://www.bbsmax.com/A/nAJvZ0OxJr/
+
+Failed to connect to github.com port 443:connection timed out
+取消全局代理：
+git config --global --unset http.proxy
+ 
+git config --global --unset https.proxy
